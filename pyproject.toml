@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "movielens-neo4j-graph"
+version = "0.1.0"
+description = ""
+authors = ["ingeniom22 <jamesmichael0444@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.0"
+scikit-learn = "^1.4.0"
+llama-index = "^0.9.46"
+neo4j = "^5.17.0"
+langchain = "^0.1.6"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -6,15 +6,13 @@ ppk_encoder = LabelEncoder()
 
 lkpp_reviews_df = pd.read_csv("lkpp_dataset_clean.csv", sep=";")
 lkpp_reviews_df["ppk_id"] = ppk_encoder.fit_transform(lkpp_reviews_df["ppk_id"])
-lkpp_reviews_df.drop(columns=["Sum", "Rescalling"], inplace=True)
+# lkpp_reviews_df.drop(columns=["Sum", "Rescalling"], inplace=True)
 lkpp_reviews_df = lkpp_reviews_df[
     [
         "ppk_id",
         "company_id",
         "timestamp",
-        "rt_akurasi",
-        "rt_layanan",
-        "rt_kirim",
+        "Rescalling",
         "category",
     ]
 ]
